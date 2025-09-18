@@ -11,35 +11,41 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Artificial Intelligence (Current), Shanghai Jiao Tong University & Shanghai Innovation Institute
+  * Research Focus: Multi-Agent Systems and LLM Agents
+  * Supervisor: Prof. Dequan Wang
 
-Work experience
+Research Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Current: Research Intern
+  * Prof. Pengfei Liu's Research Group
+  * Focus: LLM Agents and Multi-Agent Systems
+  * Research on building intelligent systems beyond human capability
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* PhD Research
+  * Shanghai Jiao Tong University & Shanghai Innovation Institute
+  * Research on Multi-Agent Systems and reinforcement learning
+  * Developing autonomous research systems
+  * Supervisor: Prof. Dequan Wang
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research Interests & Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Multi-Agent Systems
+  * Collaborative AI frameworks
+  * Coordination mechanisms
+  * Distributed problem-solving
+* LLM Agents
+  * Large Language Model integration
+  * Agent architectures
+  * Autonomous reasoning systems
+* Reinforcement Learning
+  * Deep reinforcement learning
+  * Multi-agent reinforcement learning
+  * Advanced RL techniques for autonomous systems
+* AI for Scientific Discovery
+  * Autonomous research systems
+  * Scientific hypothesis generation
+  * Experimental design automation
 
 Publications
 ======
@@ -59,6 +65,13 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Contact Information
 ======
-* Currently signed in to 43 different slack teams
+* Email: chlorophyll@sjtu.edu.cn
+* Google Scholar: [Profile](https://scholar.google.com/citations?user=n8t1hRUAAAAJ&hl=en&oi=ao)
+* GitHub: [weizhihao1](https://github.com/weizhihao1)
+* Location: Shanghai, China
+
+Download CV
+======
+* [Download full CV (PDF)](/files/简历2025_V2.pdf)
