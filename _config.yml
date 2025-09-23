@@ -29,7 +29,7 @@ author:
   bio              : "PhD Student in AI & Multi-Agent Systems | Building intelligent research systems beyond human capability"
   location         : "Shanghai, China"
   employer         : "Shanghai Jiao Tong University"
-  uri              : "wechat: 13370856505" # 使用您的手机号
+  uri              : # "wechat: 13370856505" # 使用您的手机号
   email            : "chlorophyll@sjtu.edu.cn" 
   phone            : "+86-13370856505"  # 添加您的手机号
 
@@ -55,7 +55,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -70,7 +70,7 @@ author:
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
-  telegram         : "your-wechat-id" # 可以用来显示微信号
+  telegram         : # "your-wechat-id" # 可以用来显示微信号
   tumblr           : # Username
   twitter          : # Username for X / Twitter
   vine             : # Username
@@ -79,6 +79,8 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+  huggingface      : "weizhihao1" # HuggingFace username
+  wechat           : "13370856505" # WeChat ID
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
