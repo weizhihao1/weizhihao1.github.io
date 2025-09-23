@@ -13,6 +13,8 @@ I am Keyu Li (李克钰), a PhD student at Shanghai Jiao Tong University & Shang
 
 Currently, I am working under the supervision of [Prof. Dequan Wang](https://dequan.wang/) and interning with [Prof. Pengfei Liu's research group](https://plms.ai/). My ultimate vision is to build more intelligent deep research systems that can autonomously conduct scientific research at a level beyond human capability.
 
+You can download my [CV here](/files/简历2025_V2.pdf).
+
 ## Research Interests
 
 - **Multi-Agent Systems**: Developing collaborative AI frameworks for complex problem-solving
@@ -28,4 +30,4 @@ I am passionate about pushing the boundaries of artificial intelligence to creat
 
 I am always interested in discussing research collaborations, academic opportunities, and innovative ideas in AI and multi-agent systems. Please feel free to contact me via email or connect with me through my academic profiles. I welcome conversations about potential research partnerships, conference discussions, and knowledge exchange in the field of artificial intelligence.
 
-You can download my [CV here](/files/简历2025_V2.pdf).
+
