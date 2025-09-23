@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Keyu Li / Academic Portfolio"
+title                    : "Keyu Li"
 title_separator          : "-"
 name                     : &name "Keyu Li"
 description              : &description "Keyu Li's academic portfolio - Multi-Agent Systems & LLM Agent Research"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -28,9 +28,10 @@ author:
   pronouns         : # example: "she/her"
   bio              : "PhD Student in AI & Multi-Agent Systems | Building intelligent research systems beyond human capability"
   location         : "Shanghai, China"
-  employer         : "Shanghai Jiao Tong University & Shanghai Innovation Institute"
-  uri              : # URL
+  employer         : "Shanghai Jiao Tong University"
+  uri              : "wechat: 13370856505" # 使用您的手机号
   email            : "chlorophyll@sjtu.edu.cn" 
+  phone            : "+86-13370856505"  # 添加您的手机号
 
   # Academic websites
   academia         : # URL
@@ -69,7 +70,7 @@ author:
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
-  telegram         : # URL
+  telegram         : "your-wechat-id" # 可以用来显示微信号
   tumblr           : # Username
   twitter          : # Username for X / Twitter
   vine             : # Username
