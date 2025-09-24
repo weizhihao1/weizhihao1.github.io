@@ -167,6 +167,9 @@
       {% endif %}
       {% if author.huggingface %}
         <li><a href="https://huggingface.co/{{ author.huggingface }}"><img src="{{ base_path }}/images/huggingface.png" alt="Hugging Face" class="social-icon icon-pad-right" style="width: 24px; height: 16px; display: inline-block; margin-right: 8px;">Hugging Face</a></li>
+      {% endif %}
+      {% if author.xiaohongshu %}
+        <li><a href="{{ author.xiaohongshu }}"><span style="font-size: 16px; margin-right: 8px;">📖</span>小红书</a></li>
       {% endif %}      
     </ul>
   </div>
