@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to Keyu Li's Academic Portfolio"
+title: "Keyu Li"
 author_profile: true
 redirect_from:
   - /about/
@@ -9,25 +9,58 @@ redirect_from:
 
 ## About Me
 
-I am Keyu Li (李克钰), a PhD student at Shanghai Jiao Tong University & Shanghai Innovation Institute, specializing in Multi-Agent Systems and LLM Agents. My research focuses on developing intelligent systems that can exceed human performance through advanced reinforcement learning techniques and collaborative AI architectures.
+I am **Keyu Li (李克钰)**, a second-year Ph.D. student at **Shanghai Jiao Tong University** and the **Shanghai Innovation Institute**. My research interests focus on **Multi-Agent Systems**, **LLM post-training**, and **frontier AI evaluation**.
 
-Currently, I am working under the supervision of [Prof. Dequan Wang](https://dequan.wang/) and interning with [Prof. Pengfei Liu's research group](https://plms.ai/). My ultimate vision is to build more intelligent deep research systems that can autonomously conduct scientific research at a level beyond human capability.
+I am currently collaborating with [Prof. Dequan Wang](https://dequan.wang/) and [Prof. Pengfei Liu](https://plms.ai/).
 
-You can download my [CV here](/files/CV_English_2025V4.pdf).
+You can download my latest resumes here:
 
-## Research Interests
+- [Latest CV (English)](/files/CV_English_2026V1.pdf)
+- [Latest Resume (Chinese)](/files/CV_Chinese_2026V1.pdf)
 
-- **Multi-Agent Systems**: Developing collaborative AI frameworks for complex problem-solving
-- **LLM Agents**: Creating intelligent agents powered by large language models
-- **Reinforcement Learning**: Advancing RL techniques for autonomous research systems
-- **AI for Scientific Discovery**: Building systems that can independently conduct research and make scientific breakthroughs
+## Recent News
 
-## Academic Vision
+- **March 2026** — Excited to announce that two papers are accepted by **ICLR 2026**:
+  - [Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems](https://github.com/weizhihao1/MAS-Bias)
+  - [InnovatorBench: Evaluating Agents’ Ability to Conduct Innovative AI Research](https://arxiv.org/pdf/2510.27598)
+- **January 2026** — Excited to share **AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts** ([paper](https://arxiv.org/pdf/2601.11044)).
+- **September 2025** — Excited to release **Limi: Less is More for Agency** ([paper](https://arxiv.org/pdf/2509.17567)).
+- **August 2025** — Excited to release **DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery** ([paper](https://arxiv.org/pdf/2508.06960)).
 
-I am passionate about pushing the boundaries of artificial intelligence to create systems that not only assist but actively enhance human research capabilities. My goal is to develop AI agents that can autonomously formulate hypotheses, design experiments, and discover new scientific knowledge, ultimately contributing to faster scientific progress across multiple disciplines.
+## Education
 
-## Get In Touch
+- **Ph.D. in Computer Science and Technology**, Shanghai Jiao Tong University (2024–2029, expected)
+  - Research topics: AI agents, multi-agent systems, and LLM post-training
+  - Advisors: Prof. Dequan Wang and Prof. Pengfei Liu
+- **B.S. in Mathematics and Applied Mathematics**, Shanghai Jiao Tong University (2020–2024)
+  - Academic score: **92.6/100**, GPA: **4.03/4.3**, Rank: **4/45**
+  - Honors: Shanghai Outstanding Graduate, Guo Chenchen Scholarship (SJTU), Undergraduate Scholarship, Excellent League Member, Three-Good Student Award
+  - Bachelor thesis: *Towards Visualizing and Understanding Bayesian Flow Networks*
+- **Qingdao No.2 High School**, Shandong (2017–2020)
+  - Honors: Outstanding Graduate, Excellent League Member, Three-Good Student Award
 
-I am always interested in discussing research collaborations, academic opportunities, and innovative ideas in AI and multi-agent systems. Please feel free to contact me via email or connect with me through my academic profiles. I welcome conversations about potential research partnerships, conference discussions, and knowledge exchange in the field of artificial intelligence.
+## Personal Interests
 
+- Deep user of **OpenAI Codex** and **Claude Code** for research and engineering workflows
+- Long-term investor focused on high-quality companies and long-horizon value creation
+- Enthusiast of basketball, football, and fitness training
 
+## Publications
+
+Selected works (from my latest English CV):
+
+- **AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts** (2026) — [arXiv](https://arxiv.org/pdf/2601.11044)
+- **DaVinci-Agency: Unlocking Long-Horizon Agency Data-Efficiently** (2026) — [arXiv](https://arxiv.org/abs/2602.02619)
+- **Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training** (2025) — [arXiv](https://arxiv.org/abs/2510.27630)
+- **DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery** (2025) — [arXiv](https://arxiv.org/pdf/2508.06960)
+- **InnovatorBench: Evaluating Agents’ Ability to Conduct Innovative AI Research** (2025) — [arXiv](https://arxiv.org/pdf/2510.27598)
+- **Limi: Less is More for Agency** (2025) — [arXiv](https://arxiv.org/pdf/2509.17567)
+- **KAN-Mixer: Kolmogorov-Arnold Networks for Gene Expression Prediction in Plant Species** (ECCV 2024) — [Springer](https://link.springer.com/chapter/10.1007/978-3-031-72983-6_8)
+
+## Global Visitor Map
+
+<a title="free world map tracker" href="https://smallcounter.com/vmap/1772524565/">
+  <img title="global visitor map" src="https://smallcounter.com/map/view.php?type=180&id=1772524565" border="1" alt="world map hits counter" />
+</a>
+<br>
+<a href="https://smallcounter.com/map/">map counter</a>

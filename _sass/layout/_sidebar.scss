@@ -46,12 +46,12 @@
   }
 
   h3, h4 {
-    font-size: $type-size-5;
+    font-size: $type-size-4;
   }
 
   p, li {
     font-family: $sans-serif;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
     line-height: 1.5;
   }
 
@@ -83,7 +83,7 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
+  width: 56px;
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -94,7 +94,7 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 230px;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -109,7 +109,7 @@
   vertical-align: top;
   padding-left: 15px;
   padding-right: 25px;
-  line-height: 1;
+  line-height: 1.2;
 
   @include breakpoint($large) {
     display: block;
@@ -129,7 +129,7 @@
 }
 .sidebar .author__name {
   font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-size: $type-size-4;
 }
 
 .sidebar .author__desktop {
