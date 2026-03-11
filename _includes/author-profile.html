@@ -27,7 +27,11 @@
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
-      {% if author.employer %}
+      {% if author.employers %}
+        {% for employer in author.employers %}
+          <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{% if employer.url %}<a href="{{ employer.url }}">{{ employer.name }}</a>{% else %}{{ employer.name }}{% endif %}</li>
+        {% endfor %}
+      {% elsif author.employer %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}

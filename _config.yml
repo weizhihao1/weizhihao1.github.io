@@ -28,8 +28,11 @@ author:
   pronouns         : # example: "she/her"
   bio              : "Second-year Ph.D. Student<br>SJTU & SII<br>Multi-Agent Systems<br>LLM Post-training<br>Frontier AI Evaluation"
   location         : "Shanghai, China"
-  employer         : "Shanghai Jiaotong University"
-  employer         : "Shanghai Innovation Institute"
+  employers:
+    - name         : "Shanghai Jiaotong University"
+      url          : "https://www.sjtu.edu.cn/"
+    - name         : "Shanghai Innovation Institute"
+      url          : "https://www.sii.edu.cn/"
   uri              : # "wechat: 13370856505" # 使用您的手机号
   email            : "chlorophyll@sjtu.edu.cn" 
   phone            : "+86-13370856505"  # 添加您的手机号
