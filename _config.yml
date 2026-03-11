@@ -26,9 +26,10 @@ author:
   avatar           : "lky3.png"
   name             : "Keyu Li (李克钰)"
   pronouns         : # example: "she/her"
-  bio              : "Second-year Ph.D. Student at SJTU · Multi-Agent Systems · LLM Post-training · Frontier AI Evaluation"
+  bio              : "Second-year Ph.D. Student<br>SJTU & SII<br>Multi-Agent Systems<br>LLM Post-training<br>Frontier AI Evaluation"
   location         : "Shanghai, China"
-  employer         : "Shanghai Jiao Tong University"
+  employer         : "Shanghai Jiaotong University"
+  employer         : "Shanghai Innovation Institute"
   uri              : # "wechat: 13370856505" # 使用您的手机号
   email            : "chlorophyll@sjtu.edu.cn" 
   phone            : "+86-13370856505"  # 添加您的手机号
