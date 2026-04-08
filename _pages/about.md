@@ -15,11 +15,12 @@ I am currently collaborating with [Prof. Dequan Wang](https://dequan.wang/) and 
 
 You can download my latest resumes here:
 
-- [Latest CV (English)](/files/CV_English_2026V1.pdf)
-- [Latest Resume (Chinese)](/files/CV_Chinese_2026V1.pdf)
+- [Latest CV (English)](/files/简历英文版_2026V2__AI_.pdf)
+- [Latest Resume (Chinese)](/files/简历中文版_2026V2__AI_.pdf)
 
 ## Recent News
 
+- **April 2026** — Excited to share that **AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts** was accepted to **ACL 2026 Main Conference** ([paper](https://arxiv.org/pdf/2601.11044)).
 - **March 2026** — Excited to announce that two papers are accepted by **ICLR 2026**:
   - [Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems](https://github.com/weizhihao1/MAS-Bias)
   - [InnovatorBench: Evaluating Agents’ Ability to Conduct Innovative AI Research](https://arxiv.org/pdf/2510.27598)
