@@ -9,9 +9,11 @@ redirect_from:
 
 ## About Me
 
-I am **Keyu Li (李克钰)**, a second-year Ph.D. student at **Shanghai Jiao Tong University** and the **Shanghai Innovation Institute**. My research interests focus on **Multi-Agent Systems**, **LLM post-training**, and **frontier AI evaluation**.
+I am **Keyu Li (李克钰)**, a second-year Ph.D. student at **Shanghai Jiao Tong University** and **Shanghai Innovation Institute**. My research interests focus on **Multi-Agent Systems**, **LLM post-training**, and **frontier AI evaluation**.
 
-I am currently collaborating with [Prof. Dequan Wang](https://dequan.wang/) and [Prof. Pengfei Liu](https://plms.ai/).
+I am currently collaborating with [Prof. Dequan Wang](https://scholar.google.com/citations?user=OZ7PjVoAAAAJ&hl=en&oi=ao) and [Prof. Pengfei Liu](https://scholar.google.com/citations?user=oIz_CYEAAAAJ&hl=en&oi=ao).
+
+Please check my [Github](https://github.com/weizhihao1), [Google Scholar](https://scholar.google.com/citations?user=n8t1hRUAAAAJ&hl=en&oi=ao), [Huggingface](https://huggingface.co/weizhihao1), [X](https://x.com/chlorophyllwzh), and my phone number (WeChat): 13370856505
 
 You can download my latest resumes here:
 
@@ -24,7 +26,6 @@ You can download my latest resumes here:
 - **March 2026** — Excited to announce that two papers are accepted by **ICLR 2026**:
   - [Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems](https://github.com/weizhihao1/MAS-Bias)
   - [InnovatorBench: Evaluating Agents’ Ability to Conduct Innovative AI Research](https://arxiv.org/pdf/2510.27598)
-- **January 2026** — Excited to share **AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts** ([paper](https://arxiv.org/pdf/2601.11044)).
 - **September 2025** — Excited to release **Limi: Less is More for Agency** ([paper](https://arxiv.org/pdf/2509.17567)).
 - **August 2025** — Excited to release **DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery** ([paper](https://arxiv.org/pdf/2508.06960)).
 
@@ -60,8 +61,8 @@ Selected works (from my latest English CV):
 
 ## Global Visitor Map
 
-<a title="free world map tracker" href="https://smallcounter.com/vmap/1772524565/">
-  <img title="global visitor map" src="https://smallcounter.com/map/view.php?type=180&id=1772524565" border="1" alt="world map hits counter" />
-</a>
-<br>
-<a href="https://smallcounter.com/map/">map counter</a>
+<div class="visitor-map">
+  <a href="https://info.flagcounter.com/OWaf" target="_blank" rel="noopener">
+    <img src="https://s01.flagcounter.com/map/OWaf/size_l/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Global visitor map and total pageviews" />
+  </a>
+</div>

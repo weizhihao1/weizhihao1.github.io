@@ -26,12 +26,12 @@ author:
   avatar           : "lky3.png"
   name             : "Keyu Li (李克钰)"
   pronouns         : # example: "she/her"
-  bio              : "Second-year Ph.D. Student<br>SJTU & SII<br>Multi-Agent Systems<br>LLM Post-training<br>Frontier AI Evaluation"
+  bio              : "Second-year Ph.D. Student<br>Shanghai Jiao Tong University<br>Shanghai Innovation Institute<br>LLM Post Training<br>Multi-Agent Systems<br>Frontier AI Evaluation"
   location         : "Shanghai, China"
   employers:
-    - name         : "Shanghai Jiaotong University"
+    - name         : "SJTU"
       url          : "https://www.sjtu.edu.cn/"
-    - name         : "Shanghai Innovation Institute"
+    - name         : "SII"
       url          : "https://www.sii.edu.cn/"
   uri              : # "wechat: 13370856505" # 使用您的手机号
   email            : "chlorophyll@sjtu.edu.cn" 
@@ -76,7 +76,7 @@ author:
   steam            : # Username
   telegram         : # "your-wechat-id" # 可以用来显示微信号
   tumblr           : # Username
-  twitter          : # Username for X / Twitter
+  twitter          : "chlorophyllwzh"
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username

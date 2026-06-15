@@ -18,9 +18,9 @@
 
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last);
+    @include span(9.5 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(1 of 12);
   }
 
   .page__inner-wrap {
@@ -32,6 +32,23 @@
       @include full();
     }
   }
+}
+
+.visitor-map {
+  margin: 1em 0 2em;
+}
+
+.visitor-map a {
+  display: block;
+}
+
+.visitor-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  background: #fff;
 }
 
 .page__title {
