@@ -26,12 +26,12 @@ author:
   avatar           : "lky3.png"
   name             : "Keyu Li (李克钰)"
   pronouns         : # example: "she/her"
-  bio              : "Second-year Ph.D. Student<br>Shanghai Jiao Tong University<br>Shanghai Innovation Institute<br>LLM Post Training<br>Multi-Agent Systems<br>Frontier AI Evaluation"
+  bio              : "Second-year Ph.D. Student<br>Shanghai Jiaotong University<br>Shanghai Innovation Institute<br>LLM Post Training<br>Multi-Agent Systems<br>Frontier AI Evaluation"
   location         : "Shanghai, China"
   employers:
-    - name         : "SJTU"
+    - name         : "Shanghai Jiaotong University"
       url          : "https://www.sjtu.edu.cn/"
-    - name         : "SII"
+    - name         : "Shanghai Innovation Institute"
       url          : "https://www.sii.edu.cn/"
   uri              : # "wechat: 13370856505" # 使用您的手机号
   email            : "chlorophyll@sjtu.edu.cn" 
