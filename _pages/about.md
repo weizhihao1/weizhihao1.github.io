@@ -9,7 +9,7 @@ redirect_from:
 
 ## About Me
 
-I am **Keyu Li (李克钰)**, a second-year Ph.D. student at **Shanghai Jiao Tong University** and **Shanghai Innovation Institute**. My research interests focus on **Multi-Agent Systems**, **LLM post-training**, and **frontier AI evaluation**.
+I am **Keyu Li (李克钰)**, a second-year Ph.D. student at **Shanghai Jiao Tong University** and **Shanghai Innovation Institute**. My research interests focus on **LLM CPT(Continue Pre-Training)**, **LLM Mid-Training**, **Agentic Reinforcement Learning**, **Multi-Agent Systems**, and **frontier AI evaluation**.
 
 I am currently collaborating with [Prof. Dequan Wang](https://scholar.google.com/citations?user=OZ7PjVoAAAAJ&hl=en&oi=ao) and [Prof. Pengfei Liu](https://scholar.google.com/citations?user=oIz_CYEAAAAJ&hl=en&oi=ao).
 
@@ -17,11 +17,12 @@ Please check my [Github](https://github.com/weizhihao1), [Google Scholar](https:
 
 You can download my latest resumes here:
 
-- [Latest CV (English)](/files/简历英文版_2026V2__AI_.pdf)
-- [Latest Resume (Chinese)](/files/简历中文版_2026V2__AI_.pdf)
+<!-- - [Latest CV (English)](/files/简历英文版_2026V2__AI_.pdf) -->
+- [Latest Resume (Chinese)](/files/简历中文版_2026V3__AI_.pdf)
 
 ## Recent News
 
+- **May 2026** — I've joined Tencent Youtu Lab as a research intern, focusing on LLM CPT/Midtrain and Agentic RL.
 - **April 2026** — Excited to share that **AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts** was accepted to **ACL 2026 Main Conference** ([paper](https://arxiv.org/pdf/2601.11044)).
 - **March 2026** — Excited to announce that two papers are accepted by **ICLR 2026**:
   - [Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems](https://github.com/weizhihao1/MAS-Bias)
@@ -41,15 +42,15 @@ You can download my latest resumes here:
 - **Qingdao No.2 High School**, Shandong (2017–2020)
   - Honors: Outstanding Graduate, Excellent League Member, Three-Good Student Award
 
-## Personal Interests
+<!-- ## Personal Interests
 
 - Deep user of **OpenAI Codex** and **Claude Code** for research and engineering workflows
 - Long-term investor focused on high-quality companies and long-horizon value creation
-- Enthusiast of basketball, football, and fitness training
+- Enthusiast of basketball, football, and fitness training -->
 
 ## Publications
 
-Selected works (from my latest English CV):
+Selected works:
 
 - **AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts** (2026) — [arXiv](https://arxiv.org/pdf/2601.11044)
 - **DaVinci-Agency: Unlocking Long-Horizon Agency Data-Efficiently** (2026) — [arXiv](https://arxiv.org/abs/2602.02619)
