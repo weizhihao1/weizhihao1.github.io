@@ -18,7 +18,7 @@ Please check my [Github](https://github.com/weizhihao1), [Google Scholar](https:
 You can download my latest resumes here:
 
 <!-- - [Latest CV (English)](/files/简历英文版_2026V2__AI_.pdf) -->
-- [Latest Resume (Chinese)](/files/简历中文版_2026V3__AI_.pdf)
+- [Latest Resume (Chinese)](/files/简历中文版_2026V4__AI_.pdf)
 
 ## Recent News
 
