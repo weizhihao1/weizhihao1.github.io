@@ -1,0 +1,129 @@
+# Content for the homepage (rendered by _layouts/home.html).
+# Edit this file to update the site; HTML is allowed in text fields.
+
+name: "Keyu Li"
+name_zh: "李克钰"
+avatar: "/images/avatar.jpg"
+headline: '<span class="mark">Long-horizon agents</span>, from pre-training to evaluation.'
+
+bio:
+  - >-
+    Keyu Li (李克钰), second-year Ph.D. student at
+    <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a> and
+    <a href="https://www.sii.edu.cn/">Shanghai Innovation Institute</a>, advised by
+    <a href="https://scholar.google.com/citations?user=OZ7PjVoAAAAJ">Dequan Wang</a> and
+    <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ">Pengfei Liu</a>.
+    Working on LLM continual pre-training &amp; mid-training, agentic RL,
+    multi-agent systems, and frontier AI evaluation.
+  - >-
+    <span class="mark">Now a research intern at Tencent Youtu Lab</span>, building CPT / mid-training data
+    and RL recipes for coding agents. Previously at GAIR Lab, where I led
+    <a href="#agencybench">AgencyBench</a> and <a href="#datasetresearch">DatasetResearch</a>.
+    Heavy daily user of Claude Code and Codex.
+
+links:
+  - { label: "Scholar", url: "https://scholar.google.com/citations?user=n8t1hRUAAAAJ&hl=en" }
+  - { label: "GitHub", url: "https://github.com/weizhihao1" }
+  - { label: "Hugging Face", url: "https://huggingface.co/weizhihao1" }
+  - { label: "X", url: "https://x.com/chlorophyllwzh" }
+  - { label: "小红书", url: "https://xhslink.com/m/7zNvZFvWGK1" }
+  - { label: "Email", url: "mailto:chlorophyll@sjtu.edu.cn" }
+
+resume: "/files/简历中文版_2026V4__AI_.pdf"
+email: "chlorophyll@sjtu.edu.cn"
+wechat: "13370856505"
+
+news:
+  - date: "May 2026"
+    text: "Joined <strong>Tencent Youtu Lab</strong> as a research intern, working on LLM CPT / mid-training and agentic RL."
+  - date: "Apr 2026"
+    text: "<a href=\"#agencybench\">AgencyBench</a> accepted to the <strong>ACL 2026</strong> Main Conference."
+  - date: "Mar 2026"
+    text: "Two papers accepted to <strong>ICLR 2026</strong>: <a href=\"#mas-bias\">Aligned Agents, Biased Swarm</a> and <a href=\"#innovatorbench\">InnovatorBench</a>."
+  - date: "Sep 2025"
+    text: "Released <a href=\"#limi\">LIMI: Less is More for Agency</a>."
+  - date: "Aug 2025"
+    text: "Released <a href=\"#datasetresearch\">DatasetResearch</a>, a benchmark for demand-driven dataset discovery."
+
+# role: "first" | "co-first" | (empty). "Keyu Li" is bolded automatically.
+publications:
+  - id: agencybench
+    title: "AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts"
+    authors: "Keyu Li, Junhao Shi, Yang Xiao, Mohan Jiang, Jie Sun, Yunze Wu, Dayuan Fu, Shijie Xia, Xiaojie Cai, Tianze Xu, Weiye Si, Wenjie Li, Dequan Wang, Pengfei Liu"
+    venue: "ACL 2026"
+    note: "main"
+    role: first
+    paper: "https://arxiv.org/abs/2601.11044"
+    code: "GAIR-NLP/AgencyBench"
+    arxiv: "2601.11044"
+  - id: mas-bias
+    title: "Aligned Agents, Biased Swarm: Measuring Bias Amplification in Multi-Agent Systems"
+    authors: "Keyu Li, Jin Gao, Dequan Wang"
+    venue: "ICLR 2026"
+    role: first
+    code: "weizhihao1/MAS-Bias"
+  - id: innovatorbench
+    title: "InnovatorBench: Evaluating Agents' Ability to Conduct Innovative LLM Research"
+    authors: "Yunze Wu, Dayuan Fu, Weiye Si, Zhen Huang, Mohan Jiang, Keyu Li, Shijie Xia, Jie Sun, Tianze Xu, Xiangkun Hu, Pengrui Lu, Xiaojie Cai, Lyumanshan Ye, Wenhong Zhu, Yang Xiao, Pengfei Liu"
+    venue: "ICLR 2026"
+    paper: "https://arxiv.org/abs/2510.27598"
+    code: "GAIR-NLP/InnovatorBench"
+    arxiv: "2510.27598"
+  - id: davinci-agency
+    title: "daVinci-Agency: Unlocking Long-Horizon Agency Data-Efficiently"
+    authors: "Mohan Jiang, Dayuan Fu, Junhao Shi, Ji Zeng, Weiye Si, Keyu Li, Xuefeng Li, Yang Xiao, Wenjie Li, Dequan Wang, Pengfei Liu"
+    venue: "arXiv 2026"
+    paper: "https://arxiv.org/abs/2602.02619"
+    code: "GAIR-NLP/daVinci-Agency"
+    arxiv: "2602.02619"
+  - id: datasetresearch
+    title: "DatasetResearch: Benchmarking Agent Systems for Demand-Driven Dataset Discovery"
+    authors: "Keyu Li, Mohan Jiang, Dayuan Fu, Yunze Wu, Xiangkun Hu, Dequan Wang, Pengfei Liu"
+    venue: "arXiv 2025"
+    role: first
+    paper: "https://arxiv.org/abs/2508.06960"
+    code: "GAIR-NLP/DatasetResearch"
+    arxiv: "2508.06960"
+  - id: limi
+    title: "LIMI: Less is More for Agency"
+    authors: "Yang Xiao, Mohan Jiang, Jie Sun, Keyu Li, Jifan Lin, Yumin Zhuang, Ji Zeng, Shijie Xia, Qishuo Hua, Xuefeng Li, Xiaojie Cai, Tongyu Wang, Yue Zhang, Liming Liu, Xia Wu, Jinlong Hou, Yuan Cheng, Wenjie Li, Xiang Wang, Dequan Wang, Pengfei Liu"
+    venue: "arXiv 2025"
+    role: co-first
+    paper: "https://arxiv.org/abs/2509.17567"
+    code: "GAIR-NLP/LIMI"
+    arxiv: "2509.17567"
+  - id: interaction-as-intelligence
+    title: "Interaction as Intelligence Part II: Asynchronous Human-Agent Rollout for Long-Horizon Task Training"
+    authors: "Dayuan Fu, Yunze Wu, Xiaojie Cai, Lyumanshan Ye, Shijie Xia, Zhen Huang, Weiye Si, Tianze Xu, Jie Sun, Keyu Li, Mohan Jiang, Junfei Wang, Qishuo Hua, Pengrui Lu, Yang Xiao, Pengfei Liu"
+    venue: "arXiv 2025"
+    paper: "https://arxiv.org/abs/2510.27630"
+    arxiv: "2510.27630"
+  - id: kan-mixer
+    title: "KAN-Mixer: Kolmogorov-Arnold Networks for Gene Expression Prediction in Plant Species"
+    authors: "Jin Gao, Juntu Zhao, Keyu Li, Dequan Wang"
+    venue: "ECCV 2024 Workshops"
+    paper: "https://doi.org/10.1007/978-3-031-92387-6_9"
+
+experience:
+  - org: "Tencent Youtu Lab"
+    role: "Research Intern"
+    date: "2026.05 – now"
+    text: "CPT / mid-training data for coding agents, agentic RL and on-policy distillation."
+  - org: "Shanghai Innovation Institute · GAIR Lab"
+    role: "Research Intern"
+    date: "2025.05 – 2026.05"
+    text: "Post-training and evaluation of LLM agents with Prof. Pengfei Liu: AgencyBench, DatasetResearch, LIMI."
+  - org: "Soochow Securities · Fintech"
+    role: "Quant Research Intern"
+    date: "2024.06 – 2024.09"
+    text: "Deep-learning factor mining on Level-2 market data (CNN / RNN / Transformer / KAN)."
+
+education:
+  - school: "Shanghai Jiao Tong University"
+    degree: "Ph.D., Computer Science and Technology"
+    date: "2024 – 2029"
+    text: "Joint program with Shanghai Innovation Institute. Advisors: Dequan Wang, Pengfei Liu."
+  - school: "Shanghai Jiao Tong University"
+    degree: "B.S., Mathematics and Applied Mathematics"
+    date: "2020 – 2024"
+    text: "GPA 4.03 / 4.3, rank 4 / 45. Shanghai Outstanding Graduate, Guo Chenchen Scholarship. Thesis: <em>Towards Visualizing and Understanding Bayesian Flow Networks</em>."
