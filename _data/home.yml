@@ -38,7 +38,7 @@ email: "chlorophyll@sjtu.edu.cn"
 wechat: "13370856505"
 
 news:
-  - date: "Sep 2026"
+  - date: "Oct 2026"
     text: "Joined <strong>Xiaohongshu</strong> as a research intern (ACE Top Talent Program), working on data pipelines and post-training for visual coding, after wrapping up my internship on the <strong>Tencent WorkBuddy</strong> team."
   - date: "May 2026"
     text: "Joined the <strong>Tencent WorkBuddy</strong> team as a research intern, working on LLM CPT / SFT and agentic RL for coding agents."
@@ -113,11 +113,11 @@ publications:
 experience:
   - org: "Xiaohongshu"
     role: "Research Intern, ACE Top Talent Program"
-    date: "2026.09 – now"
+    date: "2026.10 – now"
     text: "Data pipelines and model post-training for visual coding tasks spanning web, image, 3D and game generation."
   - org: "Tencent WorkBuddy Team"
     role: "Research Intern"
-    date: "2026.05 – 2026.09"
+    date: "2026.05 – 2026.10"
     text: "Built a coding-agent data loop from 6.75M production trajectories (3.0M training candidates, 1.5M traceable SFT examples); continued pre-training and SFT of a 30B-A3B model on 60B tokens with 128 / 256 H200s, +5–10% on SWE-bench Verified and WorkBuddy Bench; online RL and on-policy distillation with veRL / GRPO."
   - org: "Shanghai Innovation Institute · GAIR Lab"
     role: "Research Intern"
