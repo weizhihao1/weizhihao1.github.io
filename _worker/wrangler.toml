@@ -1,0 +1,14 @@
+name = "keyuli-visitors"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+routes = [{ pattern = "stats.keyuli.space", custom_domain = true }]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "keyuli-visitors"
+database_id = "d2a77100-aeb8-4a96-858f-aaf34d6bb631"
+migrations_dir = "migrations"
+
+[observability]
+enabled = true

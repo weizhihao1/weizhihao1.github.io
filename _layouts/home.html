@@ -45,6 +45,8 @@
       --tag-bg: rgba(180, 240, 60, .1);
       --tag-fg: #c8f56e;
       --img: brightness(.92);
+      --dot: #33373e;
+      --pt: #b4f03c;
       --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
       --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, "PingFang SC", monospace;
       color-scheme: dark;
@@ -62,6 +64,8 @@
       --tag-bg: rgba(92, 140, 0, .1);
       --tag-fg: #457000;
       --img: none;
+      --dot: #d5d9de;
+      --pt: #5d8f00;
       color-scheme: light;
     }
 
@@ -174,10 +178,30 @@
     .tl p { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .9rem; }
 
     /* Visitors */
-    .visitors p { margin: 0 0 1rem; color: var(--muted); font-size: .9rem; }
-    .visitors a.flags { display: block; width: fit-content; max-width: 100%; }
-    .visitors img { filter: grayscale(1) contrast(1.05); opacity: .78; transition: filter .3s, opacity .3s; }
-    .visitors a.flags:hover img { filter: none; opacity: 1; }
+    .vstats { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 2.2rem; margin: 0 0 1.2rem; }
+    .vstat b { display: block; color: var(--title); font-size: 2rem; font-weight: 750; letter-spacing: -.03em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+    .vstat span { color: var(--muted); font-family: var(--font-mono); font-size: .72rem; }
+    .vlast { margin-left: auto; color: var(--muted); font-family: var(--font-mono); font-size: .72rem; }
+    .vlast i { display: inline-block; width: 6px; height: 6px; margin-right: .45rem; border-radius: 50%; background: var(--green); vertical-align: .1em; box-shadow: 0 0 0 0 var(--green); animation: ping 2s infinite; }
+    .mapbox { position: relative; }
+    .map { display: block; width: 100%; height: auto; overflow: visible; }
+    .map .land { fill: none; stroke: var(--dot); stroke-width: 3.2; stroke-linecap: round; }
+    .map .pt { fill: var(--pt); fill-opacity: .55; stroke: var(--pt); stroke-opacity: .9; stroke-width: 1; transition: fill-opacity .15s; cursor: default; }
+    .map .pt:hover, .map .pt.on { fill-opacity: .95; }
+    .map .pulse { fill: none; stroke: var(--pt); stroke-width: 1.5; transform-box: fill-box; transform-origin: center; animation: ring 2.4s ease-out infinite; }
+    .tip { position: absolute; z-index: 2; pointer-events: none; padding: .25rem .55rem; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--title); font-family: var(--font-mono); font-size: .72rem; white-space: nowrap; transform: translate(-50%, calc(-100% - 10px)); opacity: 0; transition: opacity .12s; }
+    .tip.show { opacity: 1; }
+    .tip span { color: var(--muted); }
+    .vtop { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .55rem 1.6rem; margin: 1.2rem 0 0; padding: 0; list-style: none; font-family: var(--font-mono); font-size: .74rem; }
+    .vtop li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .25rem .5rem; color: var(--text); }
+    .vtop li span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .vtop li span:nth-child(2) { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .vtop .bar { grid-column: 1 / -1; height: 2px; border-radius: 2px; background: var(--border); overflow: hidden; }
+    .vtop .bar i { display: block; height: 100%; background: var(--pt); opacity: .8; }
+    .vnote { margin: 1rem 0 0; color: var(--faint); font-family: var(--font-mono); font-size: .68rem; }
+    @keyframes ring { from { transform: scale(.6); opacity: .9; } to { transform: scale(2.6); opacity: 0; } }
+    @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(180, 240, 60, .55); } 80%, 100% { box-shadow: 0 0 0 6px rgba(180, 240, 60, 0); } }
+    @media (prefers-reduced-motion: reduce) { .map .pulse, .vlast i { animation: none; } }
 
     footer { margin-top: 5rem; padding-top: 1.4rem; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1rem; color: var(--muted); }
     footer a { color: var(--muted); }
@@ -198,6 +222,8 @@
       .tl li { grid-template-columns: 1fr; }
       .tl .date { text-align: left; grid-row: 2; }
       .mobile-toggle { display: inline !important; }
+      .vlast { margin-left: 0; flex-basis: 100%; }
+      .map .land { stroke-width: 3.6; }
     }
     .mobile-toggle { display: none; }
   </style>
@@ -213,6 +239,7 @@
       <a href="#publications">Publications</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
+      <a href="#visitors">Visitors</a>
     </nav>
     <div class="ext-wrap">
       <p class="label">elsewhere</p>
@@ -299,11 +326,19 @@
     </section>
 
     <section id="visitors" class="visitors">
-      <h2>Visitors <a class="more mono" href="https://info.flagcounter.com/OWaf">details →</a></h2>
-      <p>Thanks for stopping by. Readers so far, by country:</p>
-      <a class="flags" href="https://info.flagcounter.com/OWaf" aria-label="Visitor statistics">
-        <img id="flagcounter" width="578" height="65" alt="Visitors by country" loading="lazy">
-      </a>
+      <h2>Visitors</h2>
+      <div class="vstats">
+        <div class="vstat"><b data-v="visits">–</b><span>visits</span></div>
+        <div class="vstat"><b data-v="countries">–</b><span>countries &amp; regions</span></div>
+        <div class="vstat"><b data-v="places">–</b><span>places</span></div>
+        <div class="vlast" data-v="last" hidden><i></i><span></span></div>
+      </div>
+      <div class="mapbox">
+        {% include visitor-map.svg %}
+        <div class="tip" role="status"></div>
+      </div>
+      <ul class="vtop" aria-label="Top countries and regions"></ul>
+      <p class="vnote">Thanks for stopping by. Self-hosted counter, no cookies; one visit per visitor per day, locations at city level.</p>
     </section>
 
     <footer class="mono">
@@ -316,15 +351,11 @@
 <script>
   (function () {
     var root = document.documentElement;
-    var FC = 'https://s01.flagcounter.com/count2/OWaf/bg_{bg}/txt_{fg}/border_{bg}/columns_6/maxflags_12/viewers_3/labels_1/pageviews_0/flags_0/percent_1/';
     function isLight() { return root.getAttribute('data-theme') === 'light'; }
     function paint() {
       var light = isLight();
       document.querySelectorAll('[data-theme-toggle]').forEach(function (b) { b.textContent = light ? 'dark mode' : 'light mode'; });
     }
-    // Flag counter image doubles as the hit counter, so load it once with colors for the initial theme.
-    var fc = document.getElementById('flagcounter');
-    if (fc) fc.src = isLight() ? FC.replace(/\{bg\}/g, 'FCFCFB').replace('{fg}', '80858D') : FC.replace(/\{bg\}/g, '0B0C0E').replace('{fg}', '7B818A');
     paint();
     document.querySelectorAll('[data-theme-toggle]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -345,6 +376,90 @@
     }
     window.addEventListener('scroll', spy, { passive: true });
     spy();
+
+    // Visitor map: record this visit and draw the result. Counter source: _worker/ (Cloudflare Worker + D1 at stats.keyuli.space).
+    (function () {
+      var API = 'https://stats.keyuli.space';
+      var svg = document.querySelector('.visitors .map'), tip = document.querySelector('.visitors .tip');
+      if (!svg || !window.fetch) return;
+      var K = +svg.dataset.k, TX = +svg.dataset.tx, TY = +svg.dataset.ty, VB = svg.viewBox.baseVal;
+      var NS = 'http://www.w3.org/2000/svg', g = svg.querySelector('.pts');
+      // Equal Earth projection (same constants as d3-geo, used to build the base map).
+      function project(lon, lat) {
+        var A1 = 1.340264, A2 = -0.081106, A3 = 0.000893, A4 = 0.003796, M = Math.sqrt(3) / 2;
+        var l = Math.asin(M * Math.sin(lat * Math.PI / 180)), l2 = l * l, l6 = l2 * l2 * l2;
+        var x = lon * Math.PI / 180 * Math.cos(l) / (M * (A1 + 3 * A2 * l2 + l6 * (7 * A3 + 9 * A4 * l2)));
+        var y = l * (A1 + A2 * l2 + l6 * (A3 + A4 * l2));
+        return [TX + K * x, TY - K * y];
+      }
+      var names; try { names = new Intl.DisplayNames(['en'], { type: 'region' }); } catch (e) {}
+      function cname(cc) { try { return (names && names.of(cc)) || cc; } catch (e) { return cc; } }
+      function fmt(n) { return Number(n).toLocaleString('en-US'); }
+      function ago(t) {
+        var s = (Date.now() - Date.parse(t)) / 1000;
+        if (!(s >= 0)) return '';
+        if (s < 90) return 'just now';
+        if (s < 3600) return Math.round(s / 60) + ' min ago';
+        if (s < 86400) return Math.round(s / 3600) + ' h ago';
+        return Math.round(s / 86400) + ' d ago';
+      }
+      function set(k, v) { var el = document.querySelector('[data-v="' + k + '"]'); if (el) el.textContent = v; }
+      function showTip(c, label) {
+        var r = svg.getBoundingClientRect(), sc = r.width / VB.width;
+        tip.innerHTML = '';
+        var b = document.createElement('b'); b.textContent = label.place; tip.appendChild(b);
+        var sp = document.createElement('span'); sp.textContent = ' · ' + fmt(label.n) + (label.n === 1 ? ' visit' : ' visits'); tip.appendChild(sp);
+        tip.style.left = (c.cx.baseVal.value * sc) + 'px';
+        tip.style.top = (c.cy.baseVal.value * sc - c.r.baseVal.value * sc) + 'px';
+        tip.classList.add('show');
+      }
+      function draw(d) {
+        set('visits', fmt(d.visits));
+        set('countries', fmt(d.countries.length));
+        set('places', fmt(d.places.length));
+        var max = d.places.reduce(function (m, p) { return Math.max(m, p.n); }, 1);
+        g.textContent = '';
+        d.places.slice().sort(function (a, b) { return b.n - a.n; }).forEach(function (p) {
+          var xy = project(p.lon, p.lat);
+          var c = document.createElementNS(NS, 'circle');
+          c.setAttribute('class', 'pt'); c.setAttribute('cx', xy[0].toFixed(1)); c.setAttribute('cy', xy[1].toFixed(1));
+          c.setAttribute('r', (2.6 + 11 * Math.sqrt(p.n / max)).toFixed(1));
+          var place = p.city && p.city !== cname(p.cc) ? p.city + ', ' + cname(p.cc) : cname(p.cc);
+          var label = { place: place, n: p.n };
+          c.addEventListener('mouseenter', function () { c.classList.add('on'); showTip(c, label); });
+          c.addEventListener('mouseleave', function () { c.classList.remove('on'); tip.classList.remove('show'); });
+          c.addEventListener('click', function () { showTip(c, label); });
+          g.appendChild(c);
+        });
+        if (d.last) {
+          var lp = d.places.filter(function (p) { return p.city === d.last.city && p.cc === d.last.cc; })[0];
+          if (lp) {
+            var xy = project(lp.lon, lp.lat), ring = document.createElementNS(NS, 'circle');
+            ring.setAttribute('class', 'pulse'); ring.setAttribute('cx', xy[0].toFixed(1)); ring.setAttribute('cy', xy[1].toFixed(1)); ring.setAttribute('r', '5');
+            g.appendChild(ring);
+          }
+          var el = document.querySelector('[data-v="last"]');
+          el.querySelector('span').textContent = 'latest · ' + (d.last.city && d.last.city !== cname(d.last.cc) ? d.last.city + ', ' : '') + cname(d.last.cc) + ' · ' + ago(d.last.t);
+          el.hidden = false;
+        }
+        var top = document.querySelector('.vtop'), cmax = d.countries.length ? d.countries[0].n : 1;
+        top.textContent = '';
+        d.countries.slice(0, 8).forEach(function (c) {
+          var li = document.createElement('li');
+          var a = document.createElement('span'); a.textContent = cname(c.cc);
+          var b = document.createElement('span'); b.textContent = (100 * c.n / d.visits).toFixed(1) + '%';
+          var bar = document.createElement('span'); bar.className = 'bar';
+          var i = document.createElement('i'); i.style.width = (100 * c.n / cmax).toFixed(1) + '%'; bar.appendChild(i);
+          li.appendChild(a); li.appendChild(b); li.appendChild(bar); top.appendChild(li);
+        });
+      }
+      svg.addEventListener('mouseleave', function () { tip.classList.remove('show'); });
+      var local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+      fetch(API + (local ? '/stats' : '/hit'), { method: local ? 'GET' : 'POST', mode: 'cors', credentials: 'omit', keepalive: true })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(draw)
+        .catch(function () { set('visits', '—'); document.querySelector('.vnote').textContent = 'Visitor stats are temporarily unavailable.'; });
+    })();
 
     // GitHub stars, cached per session; silently skipped if the API is unavailable.
     document.querySelectorAll('.stars[data-repo]').forEach(function (el) {
