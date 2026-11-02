@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark light">
   <title>{{ h.name }} · {{ h.name_zh }}</title>
-  <meta name="description" content="{{ h.name }} ({{ h.name_zh }}), Ph.D. student at SJTU & SII working on LLM pre-training, agentic RL, multi-agent systems and AI evaluation.">
+  <meta name="description" content="{{ h.name }} ({{ h.name_zh }}), Ph.D. student at SJTU & SII working on LLM pre-training, post-training, agentic RL, multi-agent systems and AI evaluation.">
   <link rel="canonical" href="https://weizhihao1.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://weizhihao1.github.io/">
   <meta property="og:title" content="{{ h.name }} ({{ h.name_zh }})">
-  <meta property="og:description" content="Ph.D. student at SJTU & SII. LLM pre-training, agentic RL, multi-agent systems, AI evaluation.">
+  <meta property="og:description" content="Ph.D. student at SJTU & SII. LLM pre-training, post-training, agentic RL, multi-agent systems, AI evaluation.">
   <meta property="og:image" content="https://weizhihao1.github.io{{ h.avatar }}">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@chlorophyllwzh">
@@ -93,6 +93,7 @@
     strong { color: var(--title); font-weight: 600; }
     .mono { font-family: var(--font-mono); font-size: .82em; letter-spacing: -.01em; font-variant-numeric: tabular-nums; }
     .mark { background: linear-gradient(transparent 58%, var(--marker) 58%, var(--marker) 92%, transparent 92%); color: inherit; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+    .nw { white-space: nowrap; }
     ::selection { background: var(--green); color: #0b0b0c; }
 
     /* Layout */
@@ -231,7 +232,8 @@
       <p class="bio">{{ p }}</p>
       {%- endfor %}
       <div class="cta">
-        <a class="primary" href="{{ h.resume }}">Resume (PDF) →</a>
+        <a class="primary" href="{{ h.resume_en }}">CV · English (PDF) →</a>
+        <a class="primary" href="{{ h.resume_zh }}" lang="zh">简历 · 中文 (PDF) →</a>
         <a class="primary" href="mailto:{{ h.email }}">{{ h.email }}</a>
         <span class="plain">WeChat · {{ h.wechat }}</span>
         <button class="toggle mobile-toggle" type="button" data-theme-toggle style="padding-left:0;border:0;margin:0">light mode</button>

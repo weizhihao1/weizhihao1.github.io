@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Keyu Li"
 title_separator          : "-"
 name                     : &name "Keyu Li"
-description              : &description "Keyu Li's academic portfolio - Multi-Agent Systems & LLM Agent Research"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Keyu Li (李克钰) - Ph.D. student at SJTU & SII working on LLM pre-training, post-training and agentic RL"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://weizhihao1.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "lky3.png"
   name             : "Keaney Li (李克钰)"
   pronouns         : # example: "she/her"
-  bio              : "Second-year Ph.D. Student<br>LLM CPT / Midtrain<br>Agentic RL<br>Multi-Agent Systems<br>Frontier AI Evaluation"
+  bio              : "Second-year Ph.D. Student<br>LLM Pre-training / Post-training<br>Agentic RL<br>Multi-Agent Systems<br>Frontier AI Evaluation"
   location         : "Shanghai, China"
   employers:
     - name         : "Shanghai Jiaotong University"
@@ -68,7 +68,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "keaney-li-976220271"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -225,21 +225,6 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
@@ -260,41 +245,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS

@@ -4,7 +4,7 @@
 name: "Keyu Li"
 name_zh: "李克钰"
 avatar: "/images/avatar.jpg"
-headline: '<span class="mark">Long-horizon agents</span>, from pre-training to evaluation.'
+headline: '<span class="mark">Long-horizon agents</span>, from <span class="nw">pre-training</span> to <span class="nw">post-training</span> to evaluation.'
 
 bio:
   - >-
@@ -13,29 +13,35 @@ bio:
     <a href="https://www.sii.edu.cn/">Shanghai Innovation Institute</a>, advised by
     <a href="https://scholar.google.com/citations?user=OZ7PjVoAAAAJ">Dequan Wang</a> and
     <a href="https://scholar.google.com/citations?user=oIz_CYEAAAAJ">Pengfei Liu</a>.
-    Working on LLM continual pre-training &amp; mid-training, agentic RL,
-    multi-agent systems, and frontier AI evaluation.
+    Working on the full LLM pipeline (continual pre-training &amp; mid-training, post-training,
+    agentic RL) and the data flywheels that drive it, plus multi-agent systems and frontier AI evaluation.
   - >-
-    <span class="mark">Now a research intern at Tencent Youtu Lab</span>, building CPT / mid-training data
-    and RL recipes for coding agents. Previously at GAIR Lab, where I led
-    <a href="#agencybench">AgencyBench</a> and <a href="#datasetresearch">DatasetResearch</a>.
+    <span class="mark">Now a research intern at Xiaohongshu (ACE Top Talent Program)</span>, owning data pipelines
+    and post-training for visual coding: web, image, 3D and game generation.
+    Previously on the Tencent WorkBuddy team, building the data loop, CPT / SFT and agentic RL for coding agents,
+    and at GAIR Lab, where I led <a href="#agencybench">AgencyBench</a> and <a href="#datasetresearch">DatasetResearch</a>.
     Heavy daily user of Claude Code and Codex.
 
 links:
   - { label: "Scholar", url: "https://scholar.google.com/citations?user=n8t1hRUAAAAJ&hl=en" }
   - { label: "GitHub", url: "https://github.com/weizhihao1" }
   - { label: "Hugging Face", url: "https://huggingface.co/weizhihao1" }
+  - { label: "LinkedIn", url: "https://www.linkedin.com/in/keaney-li-976220271/" }
   - { label: "X", url: "https://x.com/chlorophyllwzh" }
   - { label: "小红书", url: "https://xhslink.com/m/7zNvZFvWGK1" }
   - { label: "Email", url: "mailto:chlorophyll@sjtu.edu.cn" }
 
-resume: "/files/简历中文版_2026V4__AI_.pdf"
+# Resume PDFs: replace these files to update (keep the names so links stay stable).
+resume_en: "/files/Keyu_Li_CV_EN.pdf"
+resume_zh: "/files/Keyu_Li_CV_ZH.pdf"
 email: "chlorophyll@sjtu.edu.cn"
 wechat: "13370856505"
 
 news:
+  - date: "Sep 2026"
+    text: "Joined <strong>Xiaohongshu</strong> as a research intern (ACE Top Talent Program), working on data pipelines and post-training for visual coding, after wrapping up my internship on the <strong>Tencent WorkBuddy</strong> team."
   - date: "May 2026"
-    text: "Joined <strong>Tencent Youtu Lab</strong> as a research intern, working on LLM CPT / mid-training and agentic RL."
+    text: "Joined the <strong>Tencent WorkBuddy</strong> team as a research intern, working on LLM CPT / SFT and agentic RL for coding agents."
   - date: "Apr 2026"
     text: "<a href=\"#agencybench\">AgencyBench</a> accepted to the <strong>ACL 2026</strong> Main Conference."
   - date: "Mar 2026"
@@ -105,10 +111,14 @@ publications:
     paper: "https://doi.org/10.1007/978-3-031-92387-6_9"
 
 experience:
-  - org: "Tencent Youtu Lab"
+  - org: "Xiaohongshu"
+    role: "Research Intern, ACE Top Talent Program"
+    date: "2026.09 – now"
+    text: "Data pipelines and model post-training for visual coding tasks spanning web, image, 3D and game generation."
+  - org: "Tencent WorkBuddy Team"
     role: "Research Intern"
-    date: "2026.05 – now"
-    text: "CPT / mid-training data for coding agents, agentic RL and on-policy distillation."
+    date: "2026.05 – 2026.09"
+    text: "Built a coding-agent data loop from 6.75M production trajectories (3.0M training candidates, 1.5M traceable SFT examples); continued pre-training and SFT of a 30B-A3B model on 60B tokens with 128 / 256 H200s, +5–10% on SWE-bench Verified and WorkBuddy Bench; online RL and on-policy distillation with veRL / GRPO."
   - org: "Shanghai Innovation Institute · GAIR Lab"
     role: "Research Intern"
     date: "2025.05 – 2026.05"
